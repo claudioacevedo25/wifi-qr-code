@@ -1,12 +1,16 @@
 import qrcode
 import qrcode.constants
 
-data = {
-    "S": 'DIGIFIBRA-PLUS-D130',
-    "T": 'WPA2',
-    "P": 'NFL377UERG'
-}
+from dotenv import load_dotenv
+import os
 
+load_dotenv()
+
+data = {
+    "S": os.getenv('WIFI_S'),
+    "T": os.getenv('WIFI_T'),
+    "P": os.getenv('WIFI_P')
+}
 
 wifi = f"WIFI:S:{data['S']};T:{data['T']};P:{data['P']};;"
 
