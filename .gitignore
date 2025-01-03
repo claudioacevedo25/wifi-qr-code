@@ -1,0 +1,4 @@
+# Ignore qr code images
+*.png
+*.webp
+*.jpg
