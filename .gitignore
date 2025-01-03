@@ -2,3 +2,6 @@
 *.png
 *.webp
 *.jpg
+
+# Ignore env file
+.env
